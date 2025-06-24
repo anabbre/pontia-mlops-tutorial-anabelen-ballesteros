@@ -41,7 +41,7 @@ jobs:
 
       - name: Train and save model
         run: |
-          python src/main.py
+          python -m src/main
 
       - name: Save run ID to env
         run: echo "RUN_ID=$(cat run_id.txt)" >> $GITHUB_ENV
