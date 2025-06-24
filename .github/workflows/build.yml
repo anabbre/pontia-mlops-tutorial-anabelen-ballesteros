@@ -16,7 +16,6 @@ jobs:
       EXPERIMENT_NAME: ${{vars.EXPERIMENT_NAME}}
       MLFLOW_URL: ${{vars.MLFLOW_URL}}
       MODEL_NAME: ${{vars.MODEL_NAME}}
-      RUN_NAME: ${{ env.RUN_NAME }}
     steps:
       - name: Generate RUN_NAME
         run: |
