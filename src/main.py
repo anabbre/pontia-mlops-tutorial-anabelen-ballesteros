@@ -7,9 +7,14 @@ import mlflow
 import mlflow.sklearn
 from pathlib import Path
 from datetime import datetime
+
+import sys
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+
 from src.data_loader import load_data, preprocess_data
 from src.evaluate import evaluate
 from src.model import train_model
+
 
 # Configurar logging (consola + archivo)
 logging.basicConfig(
