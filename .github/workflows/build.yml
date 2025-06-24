@@ -35,16 +35,14 @@ jobs:
           curl -o data/raw/adult.data https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data
           curl -o data/raw/adult.test https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.test
 
-      - name: "Train and save model"
-        run: "|
-          python src/main.py
-        "
+      - name: Train and save model
+        run: python src/main.py
 
       - name: Save run ID to env
         run: echo "RUN_ID=$(cat run_id.txt)" >> $GITHUB_ENV
 
-      - name: "Run model tests"
-        run: "python model_tests/test_model.py"
+      - name: Run model tests
+        run: python model_tests/test_model.py
 
-      - name: "Register model in MLflow"
-        run: "python scripts/register_model.py"
+      - name: Register model in MLflow
+        run: python scripts/register_model.py
