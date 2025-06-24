@@ -7,9 +7,12 @@ import mlflow
 import mlflow.sklearn
 from pathlib import Path
 from datetime import datetime
-from src.data_loader import load_data, preprocess_data
-from src.evaluate import evaluate
-from src.model import train_model
+from data_loader import load_data, preprocess_data
+from evaluate import evaluate
+from model import train_model
+import sys
+from pathlib import Path
+sys.path.append(str(Path(file).resolve().parent.parent))
 
 # Configurar logging (consola + archivo)
 logging.basicConfig(
