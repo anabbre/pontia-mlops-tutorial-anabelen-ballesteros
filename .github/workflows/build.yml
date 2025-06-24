@@ -49,3 +49,5 @@ jobs:
 
       - name: Register model in MLflow
         run: python scripts/register_model.py
+
+# Fix GitHub startup failure - trigger
