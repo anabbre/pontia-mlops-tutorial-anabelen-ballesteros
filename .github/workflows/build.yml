@@ -16,7 +16,6 @@ jobs:
       EXPERIMENT_NAME: ${{vars.EXPERIMENT_NAME}}
       MLFLOW_URL: ${{vars.MLFLOW_URL}}
       MODEL_NAME: ${{vars.MODEL_NAME}}
-      PYTHONPATH: src
 
     steps:
       - name: Generate RUN_NAME
@@ -41,7 +40,7 @@ jobs:
 
       - name: Train and save model
         run: |
-          python -m src/main
+          python src/main.py
 
       - name: Save run ID to env
         run: echo "RUN_ID=$(cat run_id.txt)" >> $GITHUB_ENV
