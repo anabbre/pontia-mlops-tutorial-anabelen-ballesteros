@@ -52,7 +52,7 @@ jobs:
           --location eastus
 
       - name: Wait for container to start
-        run: sleep 30
+        run: sleep 60
 
       - name: Probe REST API
         run: |
