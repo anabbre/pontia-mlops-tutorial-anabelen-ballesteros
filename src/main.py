@@ -1,14 +1,14 @@
 import logging
 import os
-import time
 import platform
+import sys
+import time
+from pathlib import Path
+from datetime import datetime
 import joblib
 import mlflow
 import mlflow.sklearn
-from pathlib import Path
-from datetime import datetime
 
-import sys
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 
 from src.data_loader import load_data, preprocess_data
@@ -54,6 +54,7 @@ def main():
         # Save and log model with metadata
         model_path = MODEL_DIR / "model.pkl"
         joblib.dump(model, model_path)
+        mlflow.log_artifact(str(model_path))
 
         # Save and log scaler and encoders
         joblib.dump(scaler, MODEL_DIR / "scaler.pkl")
