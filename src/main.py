@@ -27,6 +27,7 @@ logging.basicConfig(
 )
 logger=logging.getLogger("adult-income")
 
+logging.getLogger("mlflow").setLevel(logging.DEBUG)
 run_name = os.getenv('RUN_NAME', 'run_name not found')
 
 # Paths
