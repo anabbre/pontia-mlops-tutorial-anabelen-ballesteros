@@ -46,7 +46,7 @@ jobs:
         run: echo "RUN_ID=$(cat run_id.txt)" >> $GITHUB_ENV
 
       - name: Run model tests
-        run: python unit_tests/test_model.py
+        run: python model_tests/test_model.py
 
       - name: Register model in MLflow
         run: python scripts/register_model.py
