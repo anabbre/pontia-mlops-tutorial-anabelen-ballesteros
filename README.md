@@ -189,7 +189,7 @@ model_name = os.getenv("MODEL_NAME", "no_name")
 
 ```yaml
 - name: Run model tests
-  run: python model_tests/test_model.py
+  run: python model_tests/test_model.pyv
 ```
 
 📁 Estos tests se ubican dentro de la carpeta `model_tests/` e incluyen validaciones como:
@@ -255,25 +255,26 @@ Este proyecto ha seguido buenas prácticas DevOps ✅:
 
 - 🔁 Validación por pipelines antes del merge.
 
-![alt text](image-5.png)
-![alt text](image-6.png)
+![alt text](img/image-5.png)
+![alt text](img/image-6.png)
 
 - 📦 Registro de modelos y artefactos en MLflow.
 
-![alt text](image-1.png)
-- 🤖 Automatización mediante GitHub Actions.
+![alt text](img/image-1.png)
 
-![alt text](image-4.png)
+- 🤖 Automatización mediante GitHub Actions.m
+
+![alt text](img/image-4.png)
 
 - 🚀 Despliegue automático a Azure.
 
-![alt text](image.png)
+![alt text](img/image.png)
 
 📬 **Evidencia del funcionamiento**: API disponible + predicciones consultables con script local (`query_model.py`).
 
-![alt text](image-3.png)
+![alt text](img/image-3.png)
 
-![alt text](image-2.png)
+![alt text](img/image-2.png)
 ---
 
 ## 📄 Archivo adicional: problemas_resueltos.md
