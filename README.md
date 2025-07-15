@@ -162,7 +162,7 @@ Para validar que la configuración funciona correctamente:
 
 ---
 
-### ## 2. 🏗️ **Pipeline de Construcción del Modelo**: `build.yml`
+### 2. 🏗️ **Pipeline de Construcción del Modelo**: `build.yml`
 
 Esta pipeline permite entrenar y registrar el modelo automáticamente en MLflow usando GitHub Actions.
 
