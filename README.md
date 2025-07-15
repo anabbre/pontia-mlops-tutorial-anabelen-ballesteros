@@ -2,7 +2,7 @@
 
 ## 📌 Descripción
 
-Repositorio de práctica para el módulo de DevOps (Máster IA, Cloud Computing y DevOps), siguiendo el tutorial de PontIA. El objetivo es implementar un flujo MLOps realista usando **GitHub Actions**, **MLflow** y buenas prácticas de control de versiones: integración continua, ramas, PRs, variables/secretos, ejecución automática de pipelines y registro de modelos.
+Repositorio de práctica para el módulo de DevOps (Máster IA, Cloud Computing y DevOps), de Pontia.tech. El objetivo es implementar un flujo MLOps realista usando **GitHub Actions**, **MLflow** y buenas prácticas de control de versiones: integración continua, ramas, PRs, variables/secretos, ejecución automática de pipelines y registro de modelos.
 
 ---
 
